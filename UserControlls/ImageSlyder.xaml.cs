@@ -64,7 +64,7 @@ namespace ImageSlyderTest.UserControlls
             else
             {
                 var baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
-                var ImagePath = System.IO.Path.Combine(baseDirectory + "..\\..\\", path);
+                var ImagePath = System.IO.Path.Combine(baseDirectory + @"..\..\", path);
                 using (var stream = new MemoryStream(File.ReadAllBytes(ImagePath)))
                 {
                     var newBitmapImage = new BitmapImage();
